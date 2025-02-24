@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ENI-MEMORY-Profil</title>
+</head>
+<body>
+    <h1>ENI - <span>MEMORY</span> - Profil</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formulaireInscrire.html">S'inscrire</a></li>
+            <li><a href="formulaireConnecter.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Profil</h2>
+        <form>
+            <div class="zoneAvatar">
+                <img src="./ressources/question.svg" class="avatar">
+            </div>
+
+            <div class="input-group">
+                <label for="user">Nom d'utilisateur</label>
+                <div class="icon-input-container">
+                    <input type="text" id="user" readonly>
+                </div>
+            </div>
+ 
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div class="icon-input-container">
+              <input type="text" id="email" readonly>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="choixMemory">Choix du Memory</label>
+            <div class="icon-input-container" id="containerMemory">
+            </div>
+            <div id="zoneImage" class="zoneImage">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="tailleMemory">Taille du Memory</label>
+            <div class="icon-input-container">
+              <select name="tailleMemory" id="tailleMemory">
+                <option value="4par3">4 * 3</option>
+                <option value="5par5">5 * 5</option>
+                <option value="4par4">4 * 4</option>
+                <option value="3par3">3 * 3</option>
+              </select>
+            </div>
+          </div>
+            <div class="bouton">
+                <button type="submit">Enregistrez Option</button>
+            </div>
+        </form>
+
+        <aside class="dernierScore">
+            <h2>Derniers Scores : </h2>
+            <div id="dernierScore">
+              <table id="tableScore" class="tableDernierScore">
+                <tr><th>Pseudo</th><th>Score</th><th>Taille</th><th>Choix Memory</th><th>Date</th></tr>
+                <tr><td colspan="5">Pas encore de score enregistré</td></tr>
+              </table>
+            </div>
+          </aside>
+    </div>
+    
+    <script src="./js/profil.js"></script>
+</body>
+</html>

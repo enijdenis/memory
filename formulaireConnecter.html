@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ENI-MEMORY-Connecter</title>
+
+</head>
+<body>
+    <h1>ENI - <span>MEMORY</span> - Connecter</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formulaireInscrire.html">S'inscrire</a></li>
+            <li><a href="formulaireConnecter.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Connectez-vous.</h2>
+  
+        <form>
+          <div class="input-group">
+            <label for="email">Entrez votre email</label>
+            <div class="icon-input-container">
+              <input 
+              type="text"
+              autocomplete="off"
+              id="email"
+              placeholder="Votre email : exemple john@doe.fr"
+              >
+            </div>
+            <span class="error-msg">Rentrez un email valide.</span>
+          </div>
+  
+          <div class="input-group">
+            <label for="password">Mot de passe</label>
+            <div class="icon-input-container">
+              <input 
+              type="password"
+              autocomplete="off"
+              id="password"
+              placeholder="Votre mot de passe"
+              >
+            </div>
+          </div>
+  
+          <div class="bouton">
+                <button type="submit">Se connecter</button>
+                <button type="reset">Annuler</button>
+            </div>
+        </form>
+      </div>
+  
+      <script src="./js/connecter.js"></script>
+</body>
+</html>

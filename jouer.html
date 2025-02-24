@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ENI-MEMORY-Jouer</title>
+
+</head>
+<body>
+    <h1>ENI - <span>MEMORY</span> - Jouer</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formulaireInscrire.html">S'inscrire</a></li>
+            <li><a href="formulaireConnecter.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <aside>
+      <h2>Derniers meilleurs scores : </h2>
+      <div id="zoneMeilleureScore">
+        <table id="tableScore" class="meilleureScore">
+          <tr><th>Pseudo</th><th>Score</th><th>Taille</th><th>Choix Memory</th><th>Date</th</tr>
+          <tr><td colspan="5">Pas encore de score enregistré</td></tr>
+        </table>
+      </div>
+    </aside>
+    
+    
+    <p class="advice">Tentez de gagner avec le moins d'essais possible.</p>
+    <p class="advice">Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu.</p>
+    <div class="score">Nombre de coups : 0</div>
+
+    <div class="grid">
+      <div class="card" data-attr="apple">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/1.svg" id="carte1" alt="apple"/>
+          </div>
+          <div class="back"><img src="ressources/question.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="banana">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/2.svg" id="carte2" alt="banana" />
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="broccoli">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/3.svg" id="carte3" alt="broccoli" />
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="apple">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/1.svg" id="carte4" alt="apple"/>
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+      
+      <div class="card" data-attr="cherry">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/4.svg" id="carte5" alt="cherry"/>
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+      
+      <div class="card" data-attr="strawberry">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/5.svg" id="carte6" alt="strawberry" />
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="pepper">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/6.svg" id="carte7"/>
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="pepper">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/6.svg" id="carte8" />
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="strawberry">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/5.svg" id="carte9" alt="strawberry" />
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="cherry">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/4.svg" id="carte10" alt="cherry">
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="banana">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/2.svg" id="carte11" alt="banana" />
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+
+      <div class="card" data-attr="broccoli">
+        <div class="double-face">
+          <div class="face">
+            <img src="ressources/memory-legume/3.svg"  id="carte12" alt="broccoli"/>
+          </div>
+          <div class="back"><img src="ressources/question.svg" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/card.js"></script>
+</body>
+</html>
